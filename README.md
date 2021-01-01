@@ -9,7 +9,7 @@ User is welcomed by a friendly interface in which he is able to write and modify
 
 Interface below shows the features for adding or changing fonts in the program. We can select a font, pick a custom size and color.
 
-![Nastavitve](https://i.imgur.com/jycwzrk.png)
+![Nastavitve](https://i.imgur.com/wUpJOSu.png)
 
 The following window shows the interface of changing the selected font which is used in the body. Functionalities for modifying text are following: we can make the text bold, italic, underline it and also pick a certain size, color and style of font alongside with reverting all of the applied features.
 
@@ -17,7 +17,8 @@ The following window shows the interface of changing the selected font which is 
 
 As shown on the picture below, adding and changing data of users is very simple!
 
-![Stili](https://i.imgur.com/wUpJOSu.png)
+![Stili](https://i.imgur.com/jycwzrk.png)
+
 
 Interface below shows the list of current users in the database.
 

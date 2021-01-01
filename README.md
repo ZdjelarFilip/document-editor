@@ -15,14 +15,14 @@ The following window shows the interface of changing the selected font which is 
 
 ![Vstavi](https://i.imgur.com/HSwvHQl.png)
 
-As shown on the picture below, adding and changing data of users is very simple!
+As shown on the picture below user is able to open settings menu, importing and exporting files alongside with opening a file and saving it and even exiting the program.
+Exporting and importing is supported by XML Document (*.xml) and RTF file (*.rtf) formats.
 
 ![Stili](https://i.imgur.com/jycwzrk.png)
 
 
-Interface below shows the list of current users in the database.
+Interface below shows the default functionalities when program is launched. User can select if he wants to open a new document every time or open the last modified document. User may also select a default directory location for saving documents.
+In the second interface, user is able to pick a default font, which is used whenever a program is launched. Selectable features are the font, size and the color. 
 
 
 ![Nastavitve Splošno](https://i.imgur.com/I7E1fTo.png) ![Nastavitve Privzeto](https://i.imgur.com/YgMAcjB.png)
-
-There we can see the interface for adding users and their grades respectfully in the program.

@@ -22,6 +22,6 @@ As shown on the picture below, adding and changing data of users is very simple!
 Interface below shows the list of current users in the database.
 
 
-![Nastavitve Splošno](https://i.imgur.com/wUpJOSu.png) ![Nastavitve Privzeto](https://i.imgur.com/YgMAcjB.png)
+![Nastavitve Splošno](https://i.imgur.com/I7E1fTo.png) ![Nastavitve Privzeto](https://i.imgur.com/YgMAcjB.png)
 
 There we can see the interface for adding users and their grades respectfully in the program.

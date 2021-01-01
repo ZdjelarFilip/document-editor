@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="urejevalnikBesedil_Zdjelar.Uporabniski_Gradnik"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:urejevalnikBesedil_Zdjelar"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             mc:Ignorable="d" Grid.Column="0">
+    <Grid HorizontalAlignment="Left" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="45*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="0,0,2,0" Height="95" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Margin="0,0,0,0">
+                <Expander Name="ExpanderControl" Background="LavenderBlush" Header="Prikaži urejevalnik stilov"   
+                            ExpandDirection="Down" IsExpanded="False"  Grid.Column="0"
+                            DockPanel.Dock="top" Focusable="True"
+                            FontSize="20" Foreground="CornflowerBlue" VerticalAlignment="Top" Margin="0,0,0,0">
+                    <ToolBar x:Name="toolBar" Height="55" VerticalAlignment="Top" Focusable="true" Grid.Column="0">
+                        <Button x:Name="buttonKrepko" VerticalAlignment="Center" Click="buttonKrepko_Click">
+                            <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                                <Image Source="/Slike/bold1.png" Width="30" Height="30" />
+                                <TextBlock Text=" Krepko" FontSize="18" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="buttonLežeče" VerticalAlignment="Center" Click="buttonLežeče_Click">
+                            <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                                <Image Source="/Slike/italic2.png" Width="30" Height="30" />
+                                <TextBlock Text=" Ležeče" FontSize="18" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="buttonPodčrtano" VerticalAlignment="Center" Click="buttonPodčrtano_Click">
+                            <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                                <Image Source="/Slike/underline2.png" Width="30" Height="30" />
+                                <TextBlock Text=" Podčrtano" FontSize="18" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </Button>
+                        <TextBlock Text=" Velikost Pisave" Foreground="Black" FontSize="18" Margin="20,0,20,0" VerticalAlignment="Center" />
+                        <ComboBox Name="velikostFontaCbx" SelectionChanged="velikostFontaCbx_SelectionChanged" Width="80">
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>16</ComboBoxItem>
+                            <ComboBoxItem>20</ComboBoxItem>
+                            <ComboBoxItem>24</ComboBoxItem>
+                            <ComboBoxItem>24</ComboBoxItem>
+                            <ComboBoxItem>28</ComboBoxItem>
+                            <ComboBoxItem>32</ComboBoxItem>
+                            <ComboBoxItem>36</ComboBoxItem>
+                        </ComboBox>
+                        <TextBlock Text=" Stil Pisave" Foreground="Black" FontSize="18" Margin="20,0,20,0" VerticalAlignment="Center" />
+                        <ComboBox Name="fontCbx" Width="150" SelectionChanged="fontCbx_SelectionChanged" ItemsSource="{Binding Source={x:Static Fonts.SystemFontFamilies}}"/>
+                        <TextBlock Text=" Barva Pisave" Foreground="Black" FontSize="18" Margin="20,0,0,0" VerticalAlignment="Center" />
+                        <xctk:ColorPicker Name="listViewBarva" SelectedColorChanged="listViewBarva_SelectedColorChanged" ScrollViewer.VerticalScrollBarVisibility="Hidden" Margin="20,0,0,0" Width="94" Height="30"/>
+                        <Button x:Name="buttonUredi" Click="buttonUredi_Click" VerticalAlignment="Center">
+                            <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                                <Image Source="/Slike/clear1.png" Width="30" Height="30" />
+                                <TextBlock Text="  Odstranitev oblikovanja besedila" FontSize="18" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                    </ToolBar>
+                </Expander>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>
